@@ -1,0 +1,28 @@
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.nombre-sitio {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.nombre-sitio span{
+    color: #037bc0;
+}
+
+.nav-principal{
+    border: #000 solid 1px;
+}
+
+.enlace{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: dodgerblue;
+}
+
