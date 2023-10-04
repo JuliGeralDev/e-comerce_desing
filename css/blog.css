@@ -25,3 +25,9 @@
 .entrada-meta span{
     color: #037bc0;
 }
+
+/* Entarda */
+.contenido-entrada-blog{
+    width: 60rem;
+    margin: auto;
+}
