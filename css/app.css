@@ -46,10 +46,12 @@ img {
     font-weight: 900;
     padding: 1rem;
     transition: background-color .3s ease-out;
+    border: none;
 }   
 
 .btn:hover{
     background-color: #769c02;    
+    cursor: pointer;
 }
 
 

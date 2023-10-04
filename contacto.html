@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1 class="nombre-sitio">Tienda <span> Muebles </span></h1>
+    </header>
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">    
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contactanos</a>
+        </nav>
+    </div>
+ 
+    <main class="contnido-principal contenedor">
+        <h2 class="text-center">Contacto</h2>    
+        <form class="formulario">
+            <fieldset>
+                <legend>Tus datos</legend>
+                <div class="campo">
+                    <label for="nombre">Nombre: </label>
+                    <input id="nombre" type="text" placeholder="Nombre"  required/>
+                </div>
+                <div class="campo">
+                    <label for="asunto">Asunto: </label>
+                    <input id="asunto" type="text" placeholder="Asunto" required/>
+                </div>
+                <div class="campo">
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" placeholder="Email" required/>
+                </div>
+                <div class="campo">
+                    <label for="telefono">Teléfono: </label>
+                    <input id="telefono" type="tel" placeholder="Teléfono"/>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje: </label>
+                    <textarea rows="10" cols="50" id="mensaje"></textarea>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>País</legend>
+                <div class="campo">
+                    <label for="pais">País: </label>
+                    <select name="" id="pais">
+                        <option value="" disabled selected>-- Seleccione --</option>
+                        <option value="CO">Colombia</option>
+                        <option value="MX">México</option>
+                        <option value="AR">Argentina</option>
+                    </select>                    
+                </div>                
+            </fieldset>
+            <fieldset>
+                <legend>Información extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" type="radio" name="tipo" value="cliente">
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="tipo" value="proveedor">
+                </div>
+                <div class="campo">
+                    <label for="categoria">Categoría de interés</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina"></option>
+                        <option value="Exterior"></option>
+                        <option value="Habitaciones"></option>
+                    </datalist>
+                </div>
+            </fieldset>
+            <input class="btn" type="submit" value="Enviar formulario">
+        </form>   
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="grid-footer contenedor">
+            <div>
+                <h3>Categorías</h3>
+                <nav>
+                    <a href="#">Muebles</a>
+                    <a href="#">Cocina</a>
+                    <a href="#">Jardin</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardin</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Sobre nosotros</h3>
+                <nav>
+                    <a href="#">Nuestra historia</a>
+                    <a href="#">Mision, visión</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Políticas de privacidad</a>
+                    <a href="#">Nuestros valores</a>
+                </nav>
+            </div>
+            <div>
+                <h3>Soporte</h3>
+                <nav>
+                    <a href="#">Nuestra historia</a>
+                    <a href="#">Mision, visión</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Políticas de privacidad</a>
+                    <a href="#">Nuestros valores</a>
+                </nav>
+            </div>
+        </div>
+        <p>@Todos lo derechos reservados JuliCoDev</p>
+    </footer>
+
+</body>
+</html>
