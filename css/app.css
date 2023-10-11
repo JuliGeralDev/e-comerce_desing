@@ -156,14 +156,26 @@ img {
 }
 
 /* Categorias */
-.listado-categorias{
-    display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    gap: 20px;
+.categoria img{
+    width: 100%;
+    display: block;
+}
+.categoria{
+    margin-bottom: 2rem;
 }
 
 .categorias{
-    margin: 5rem auto;
+    padding: 5rem 0;
+}
+@media (min-width: 768px){
+    .listado-categorias{
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+        gap: 20px;
+    }
+    .categoria{
+        margin-bottom: 0;
+    }
 }
 .categorias h2{
     text-align: center;
