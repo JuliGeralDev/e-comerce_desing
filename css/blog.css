@@ -1,22 +1,27 @@
-.contenedor-blog{
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+@media (min-width: 768px){    
+    .contenedor-blog{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .entrada-meta{
+        display: flex;
+        justify-content: space-between;
+        
+    }
 }
+
 
 .entrada-blog {
     border-bottom: 2px solid #e1e1e1;
-    padding-bottom: 4rem;
     margin-bottom: 2rem;
+    padding: 2rem 2rem 4rem 2rem;
 }
 
 .entrada-blog:last-of-type{
     border: none;
 }
 
-.entrada-meta{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .entrada-meta p {
     font-weight: 700;
@@ -31,3 +36,5 @@
     width: 60rem;
     margin: auto;
 }
+
+

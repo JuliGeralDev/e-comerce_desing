@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
 
@@ -11,4 +11,10 @@
     height: 40rem;
     width: 40rem;
     object-fit: cover;
+}
+
+@media (min-width: 768p){
+    .galeria{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
