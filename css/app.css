@@ -20,15 +20,37 @@ h1, h2 ,h3 {
     margin: 0 0 5rem 0;
 }
 
+
 h1 {
-    font-size: 5rem;
-}
-h2{
     font-size: 4rem;
 }
-h3{
-    font-size: 3rem;
+
+@media (min-width: 768px){
+    h1{
+        font-size: 5rem;
+    }
 }
+
+
+h2{
+    font-size: 3.2rem;
+}
+
+@media (min-width: 768px){
+    h2{
+        font-size: 4rem;
+    }
+}
+h3{
+    font-size: 2.4rem;
+}
+
+@media (min-width: 768px){
+    h3{
+        font-size: 4rem;
+    }
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -103,8 +125,19 @@ img {
 }
 .nav-principal{
     padding: 20px 0;
-    display: flex;    
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px){
+    .nav-principal{  
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .hero {
+        height: 55rem;
+    }
 }
 
 .enlace{
@@ -119,7 +152,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 550px;
+    height: 25rem;
 }
 
 /* Categorias */
